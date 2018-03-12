@@ -54,7 +54,7 @@ filetype plugin indent on    " required
 "
 :set number
 :syntax enable
-colorscheme molokai_dark
+"colorscheme molokai_dark
 set list lcs=tab:»·,trail:·
 set backspace=2
 :augroup numbertoggle
