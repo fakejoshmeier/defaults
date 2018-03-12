@@ -55,14 +55,7 @@ filetype plugin indent on    " required
 :set number
 :syntax enable
 colorscheme molokai_dark
-let sbv_display_placeholder=1
-" Charactere placeholder for tabulation [2 char]
-let sbv_tab_placeholder='»·'
-" Charactere placeholder for space [1 char]
-let sbv_space_placeholder='·'
-if !empty(sbv_display_placeholder)
-	execute "set list listchars=tab:". sbv_tab_placeholder .",trail:". sbv_space_placeholder 
-endif
+set list lcs=tab:»·,trail:·
 set backspace=2
 :augroup numbertoggle
 :  autocmd!
