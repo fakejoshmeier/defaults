@@ -22,7 +22,7 @@ Plugin 'flazz/vim-colorschemes'
 
 "PIZZA!
 Plugin 'arithran/vim-pizza'
-"let g:vim_pizza_url = "https://www.dominos.com/en/pages/order/#/section/Food/category/AllEntrees/"
+let g:vim_pizza_url = "https://www.dominos.com/en/pages/order/#/section/Food/category/AllEntrees/"
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -56,12 +56,13 @@ filetype plugin indent on    " required
 :set number
 :syntax enable
 "colorscheme molokai_dark
+
 set list lcs=tab:»·,trail:·
 set backspace=2
 :augroup numbertoggle
-:  autocmd!
-:  autocmd BufEnter,FocusGained,InsertLeave * set norelativenumber
-:  autocmd BufLeave,FocusLost,InsertEnter   * set relativenumber
+:	autocmd!
+:	autocmd BufEnter,FocusGained,InsertLeave * set norelativenumber
+:	autocmd BufLeave,FocusLost,InsertEnter   * set relativenumber
 :augroup END
 :hi Whitespace ctermfg=DarkGray
 :match Whitespace /\s/
